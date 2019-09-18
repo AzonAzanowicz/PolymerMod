@@ -1,0 +1,30 @@
+{
+    "block.polymer.block_vinyl": "Vinyl Block",
+    "block.polymer.block_polystyrene_white": "White Styrofoam",
+    "block.polymer.block_polystyrene_orange": "Orange Styrofoam",
+    "block.polymer.block_polystyrene_magenta": "Magenta Styrofoam",
+    "block.polymer.block_polystyrene_light_blue": "Light Blue Styrofoam",
+    "block.polymer.block_polystyrene_yellow": "Yellow Styrofoam",
+    "block.polymer.block_polystyrene_lime": "Lime Styrofoam",
+    "block.polymer.block_polystyrene_pink": "Pink Styrofoam",
+    "block.polymer.block_polystyrene_gray": "Gray Styrofoam",
+    "block.polymer.block_polystyrene_light_gray": "Light Gray Styrofoam",
+    "block.polymer.block_polystyrene_cyan": "Cyan Styrofoam",
+    "block.polymer.block_polystyrene_purple": "Purple Styrofoam",
+    "block.polymer.block_polystyrene_blue": "Blue Styrofoam",
+    "block.polymer.block_polystyrene_brown": "Brown Styrofoam",
+    "block.polymer.block_polystyrene_green": "Green Styrofoam",
+    "block.polymer.block_polystyrene_red": "Red Styrofoam",
+    "block.polymer.block_polystyrene_black": "Black Styrofoam",
+
+    "item.polymer.grains_polypropylene": "Polypropylene Grains",
+    "item.polymer.grains_polystyrene": "Polystyrene Grains",
+    "item.polymer.grains_vinyl": "Polyvinyl Grains",
+    "item.polymer.plate_polypropylene": "Polypropylene Plate",
+    "item.polymer.plate_polystyrene": "Polystyrene Plate",
+    "item.polymer.plate_vinyl": "Polyvinyl Plate",
+
+    "container.polymer.generator_solid_fuel": "Solid Fuel Generator",
+
+    "itemGroup.polymer": "Polymer"
+}

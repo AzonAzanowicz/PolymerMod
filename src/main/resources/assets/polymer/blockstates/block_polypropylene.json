@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "polymer:block/block_polypropylene"
+        },
+        "facing=south": {
+            "model": "polymer:block/block_polypropylene"
+        },
+        "facing=west": {
+            "model": "polymer:block/block_polypropylene",
+            "y": 90
+        },
+        "facing=east": {
+            "model": "polymer:block/block_polypropylene",
+            "y": 90
+        }
+    }
+}

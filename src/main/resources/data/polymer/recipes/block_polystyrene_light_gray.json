@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "tag": "forge:storage_blocks/polystyrene"
+    },
+    "d": {
+      "tag": "forge:dyes/light_gray"
+    }
+  },
+  "result": {
+    "item": "polymer:block_polystyrene_light_gray",
+    "count": 8
+  }
+}

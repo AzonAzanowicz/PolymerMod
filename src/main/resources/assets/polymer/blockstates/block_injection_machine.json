@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "polymer:block/block_injection_machine"
+        },
+        "facing=south": {
+            "model": "polymer:block/block_injection_machine",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "polymer:block/block_injection_machine",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "polymer:block/block_injection_machine",
+            "y": 90
+        },
+        "facing=up": {
+            "model": "polymer:block/block_injection_machine"
+        },
+        "facing=down": {
+            "model": "polymer:block/block_injection_machine"
+        }
+    }
+}

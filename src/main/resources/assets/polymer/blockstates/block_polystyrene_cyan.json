@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "": [
+            { "model": "polymer:block/block_polystyrene_cyan" },
+            { "model": "polymer:block/block_polystyrene_cyan", "z": 90 },
+            { "model": "polymer:block/block_polystyrene_cyan", "z": 180 },
+            { "model": "polymer:block/block_polystyrene_cyan", "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 90 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 90, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 90, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 90, "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 180 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 180, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 180, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 180, "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 270 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 270, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 270, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_cyan", "x": 270, "z": 270 }
+        ]
+    }
+}

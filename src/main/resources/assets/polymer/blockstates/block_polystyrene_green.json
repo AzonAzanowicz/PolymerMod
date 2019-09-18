@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "": [
+            { "model": "polymer:block/block_polystyrene_green" },
+            { "model": "polymer:block/block_polystyrene_green", "z": 90 },
+            { "model": "polymer:block/block_polystyrene_green", "z": 180 },
+            { "model": "polymer:block/block_polystyrene_green", "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_green", "x": 90 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 90, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 90, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 90, "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_green", "x": 180 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 180, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 180, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 180, "z": 270 },
+
+            { "model": "polymer:block/block_polystyrene_green", "x": 270 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 270, "z": 90 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 270, "z": 180 },
+            { "model": "polymer:block/block_polystyrene_green", "x": 270, "z": 270 }
+        ]
+    }
+}

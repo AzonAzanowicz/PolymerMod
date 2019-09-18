@@ -1,0 +1,50 @@
+{
+    "variants": {
+        "facing=north,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off"
+        },
+        "facing=south,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off",
+            "y": 180
+        },
+        "facing=west,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off",
+            "y": 270
+        },
+        "facing=east,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off",
+            "y": 90
+        },
+        "facing=up,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off",
+            "x": 270
+        },
+        "facing=down,active=false": {
+            "model": "polymer:block/generator_solid_fuel_off",
+            "x": 90
+	},
+        "facing=north,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on"
+        },
+        "facing=south,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on",
+            "y": 180
+        },
+        "facing=west,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on",
+            "y": 270
+        },
+        "facing=east,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on",
+            "y": 90
+        },
+        "facing=up,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on",
+            "x": 270
+        },
+        "facing=down,active=true": {
+            "model": "polymer:block/generator_solid_fuel_on",
+            "x": 90
+	}
+    }
+}

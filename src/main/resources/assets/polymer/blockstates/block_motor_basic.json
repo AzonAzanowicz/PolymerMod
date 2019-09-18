@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "polymer:block/block_motor_basic" }
+    }
+}

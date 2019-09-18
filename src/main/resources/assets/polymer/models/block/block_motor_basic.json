@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube",
+   "textures": {
+     "particle": "polymer:block/block_machine_basic",
+     "down": "polymer:block/block_machine_basic",
+     "up": "polymer:block/block_machine_basic",
+     "east": "polymer:block/block_motor_basic",
+     "west": "polymer:block/block_motor_basic",
+     "north": "polymer:block/block_motor_basic",
+     "south": "polymer:block/block_motor_basic"
+   }
+}

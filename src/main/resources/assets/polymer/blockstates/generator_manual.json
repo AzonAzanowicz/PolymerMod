@@ -1,0 +1,27 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "polymer:block/generator_manual_on"
+        },
+        "facing=south": {
+            "model": "polymer:block/generator_manual_on",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "polymer:block/generator_manual_on",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "polymer:block/generator_manual_on",
+            "y": 90
+        },
+        "facing=up": {
+            "model": "polymer:block/generator_manual_on",
+            "x": 270
+        },
+        "facing=down": {
+            "model": "polymer:block/generator_manual_on",
+            "x": 90
+	}
+    }
+}
