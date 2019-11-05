@@ -13,7 +13,7 @@ public class ModItemGroups {
             return new ItemStack(ModItems.PLATE_BAKELITE);
         }
 
-        public boolean hasSearchBar() { return false; };
+        public boolean hasSearchBar() { return false; }
 
     };
 

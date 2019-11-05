@@ -4,7 +4,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.DyeColor;
 
-public class BlockPolystyrene extends _BlockComplex {
+public class BlockPolystyrene extends _ModBlock {
 
     public BlockPolystyrene(DyeColor color) {
         super("block_polystyrene", color, Properties.create(Material.ROCK)

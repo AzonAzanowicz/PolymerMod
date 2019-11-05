@@ -5,7 +5,6 @@ import azon.polymer.blocks.GeneratorSolidFuel;
 import azon.polymer.containers.ContainerGeneratorSolidFuel;
 import azon.polymer.init.ModBlocks;
 import azon.polymer.init.ModTileEntityTypes;
-import azon.polymer.temp.CustomEnergyStorage;
 import net.minecraft.client.gui.screen.inventory.AbstractFurnaceScreen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -76,13 +75,20 @@ public class TileGeneratorSolidFuel extends LockableTileEntity implements ITicka
 
     @Override
     public CompoundNBT write(CompoundNBT compound) {
+        super.write(compound);
+        compound.putInt("BurnTime", this.burnTime);
+        compound.putInt("RecipesUsed", this.recipesUsed);
+        compound.putBoolean("Active", this.active);
         ItemStackHelper.saveAllItems(compound, stacks);
-        return super.write(compound);
+        return compound;
     }
 
     @Override
     public void read(CompoundNBT compound) {
         super.read(compound);
+        this.burnTime = compound.getInt("BurnTime");
+        this.recipesUsed = compound.getInt("RecipesUsed");
+        this.active = compound.getBoolean("Active");
         stacks = NonNullList.withSize(getSizeInventory(), ItemStack.EMPTY);
         ItemStackHelper.loadAllItems(compound, stacks);
     }

@@ -1,8 +1,11 @@
 package azon.polymer;
 
+import azon.polymer.blocks._ModBlock;
+import azon.polymer.init.ModBlocks;
 import azon.polymer.proxy.ClientProxy;
 import azon.polymer.proxy.CommonProxy;
 import azon.polymer.proxy.ServerProxy;
+import net.minecraft.block.Block;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
@@ -21,7 +24,6 @@ public class Polymer {
 	public Polymer() {
         instance = this;
         proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
-
     }
 
 }

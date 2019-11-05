@@ -3,7 +3,7 @@ package azon.polymer.blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class BlockPolypropylene extends _BlockComplex {
+public class BlockPolypropylene extends _ModBlockComplex {
 
     public BlockPolypropylene() {
         super("block_polypropylene", Properties.create(Material.IRON)

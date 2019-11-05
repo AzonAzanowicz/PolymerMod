@@ -2,7 +2,6 @@ package azon.polymer.containers;
 
 import azon.polymer.init.ModBlocks;
 import azon.polymer.init.ModContainerTypes;
-import azon.polymer.temp.CustomEnergyStorage;
 import azon.polymer.tiles.TileGeneratorSolidFuel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.PlayerEntity;
@@ -49,7 +48,7 @@ public class ContainerGeneratorSolidFuel extends Container {
         this.world = playerInventoryIn.player.world;
         this.fields = fields;
 
-        this.addSlot(new Slot(inventory, 0, 80, 33) {
+        this.addSlot(new Slot(inventory, 0, 80, 43) {
             public boolean isItemValid(ItemStack stack) {
                 return TileGeneratorSolidFuel.isItemFuel(stack);
             }
@@ -57,12 +56,12 @@ public class ContainerGeneratorSolidFuel extends Container {
 
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 9; ++j) {
-                this.addSlot(new Slot(playerInventoryIn, j + i * 9 + 9, 8 + j * 18, 66 + i * 18));
+                this.addSlot(new Slot(playerInventoryIn, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
             }
         }
 
         for (int k = 0; k < 9; ++k) {
-            this.addSlot(new Slot(playerInventoryIn, k, 8 + k * 18, 124));
+            this.addSlot(new Slot(playerInventoryIn, k, 8 + k * 18, 142));
         }
 
         this.trackIntArray(fields);

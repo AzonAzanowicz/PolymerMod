@@ -2,11 +2,9 @@ package azon.polymer.init;
 
 import azon.polymer.Polymer;
 import azon.polymer.blocks.*;
-import azon.polymer.temp.MachineBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,8 +17,8 @@ import java.util.List;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = Polymer.MOD_ID)
 public class ModBlocks {
 
-    private static final List<Block> BLOCKS = new ArrayList<Block>();
-    private static final List<Item> ITEMS = new ArrayList<Item>();
+    private static final List<Block> BLOCKS = new ArrayList<>();
+    private static final List<Item> ITEMS = new ArrayList<>();
 
     public static Block BLOCK_INJECTION_MACHINE = register(new BlockInjectionMachine());
     public static Block CHOPPER = register(new Chopper());
@@ -30,6 +28,7 @@ public class ModBlocks {
     public static Block BLOCK_VINYL = register(new BlockVinyl());
     public static Block GENERATOR_SOLID_FUEL = register(new GeneratorSolidFuel());
     public static Block GENERATOR_MANUAL = register(new GeneratorManual());
+
     public static Block BLOCK_POLYSTYRENE_WHITE = register(new BlockPolystyrene(DyeColor.WHITE));
     public static Block BLOCK_POLYSTYRENE_ORANGE = register(new BlockPolystyrene(DyeColor.ORANGE));
     public static Block BLOCK_POLYSTYRENE_MAGENTA = register(new BlockPolystyrene(DyeColor.MAGENTA));
@@ -47,6 +46,22 @@ public class ModBlocks {
     public static Block BLOCK_POLYSTYRENE_RED = register(new BlockPolystyrene(DyeColor.RED));
     public static Block BLOCK_POLYSTYRENE_BLACK = register(new BlockPolystyrene(DyeColor.BLACK));
 
+    public static Block SLAB_POLYSTYRENE_WHITE = register(new SlabPolystyrene(DyeColor.WHITE));
+    public static Block SLAB_POLYSTYRENE_ORANGE = register(new SlabPolystyrene(DyeColor.ORANGE));
+    public static Block SLAB_POLYSTYRENE_MAGENTA = register(new SlabPolystyrene(DyeColor.MAGENTA));
+    public static Block SLAB_POLYSTYRENE_LIGHT_BLUE = register(new SlabPolystyrene(DyeColor.LIGHT_BLUE));
+    public static Block SLAB_POLYSTYRENE_YELLOW = register(new SlabPolystyrene(DyeColor.YELLOW));
+    public static Block SLAB_POLYSTYRENE_LIME = register(new SlabPolystyrene(DyeColor.LIME));
+    public static Block SLAB_POLYSTYRENE_PINK = register(new SlabPolystyrene(DyeColor.PINK));
+    public static Block SLAB_POLYSTYRENE_GRAY = register(new SlabPolystyrene(DyeColor.GRAY));
+    public static Block SLAB_POLYSTYRENE_LIGHT_GRAY = register(new SlabPolystyrene(DyeColor.LIGHT_GRAY));
+    public static Block SLAB_POLYSTYRENE_CYAN = register(new SlabPolystyrene(DyeColor.CYAN));
+    public static Block SLAB_POLYSTYRENE_PURPLE = register(new SlabPolystyrene(DyeColor.PURPLE));
+    public static Block SLAB_POLYSTYRENE_BLUE = register(new SlabPolystyrene(DyeColor.BLUE));
+    public static Block SLAB_POLYSTYRENE_BROWN = register(new SlabPolystyrene(DyeColor.BROWN));
+    public static Block SLAB_POLYSTYRENE_GREEN = register(new SlabPolystyrene(DyeColor.GREEN));
+    public static Block SLAB_POLYSTYRENE_RED = register(new SlabPolystyrene(DyeColor.RED));
+    public static Block SLAB_POLYSTYRENE_BLACK = register(new SlabPolystyrene(DyeColor.BLACK));
 
     @SubscribeEvent
     public static void onBlcoksRegistry(final RegistryEvent.Register<Block> event) {
@@ -64,10 +79,19 @@ public class ModBlocks {
         Polymer.LOGGER.debug("Registered item blocks");
     }
 
-    private static Block register(_BlockBase block) {
+    private static Block register(_ModBlock block) {
         BLOCKS.add(block);
         ITEMS.add(block.getBlockItem());
         return block;
     }
 
+    private static Block register(_ModSlab block) {
+        BLOCKS.add(block);
+        ITEMS.add(block.getBlockItem());
+        return block;
+    }
+
+    public static List<Block> getBlocksList() {
+        return BLOCKS;
+    }
 }

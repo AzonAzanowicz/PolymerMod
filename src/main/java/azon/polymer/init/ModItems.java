@@ -1,9 +1,7 @@
 package azon.polymer.init;
 
 import azon.polymer.Polymer;
-import azon.polymer.blocks._BlockBase;
 import azon.polymer.items.*;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

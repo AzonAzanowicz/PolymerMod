@@ -13,7 +13,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-public abstract class _Generator extends _BlockComplex {
+public abstract class _Generator extends _ModBlockComplex {
 
     private static DirectionalShape SHAPE;
 

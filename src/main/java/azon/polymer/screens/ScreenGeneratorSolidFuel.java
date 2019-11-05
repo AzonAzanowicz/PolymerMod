@@ -18,7 +18,7 @@ public class ScreenGeneratorSolidFuel extends ContainerScreen<ContainerGenerator
     public ScreenGeneratorSolidFuel(ContainerGeneratorSolidFuel container, PlayerInventory inv, ITextComponent title) {
         super(container, inv, title);
         xSize = 176;
-        ySize = 148;
+        ySize = 166;
     }
 
     @Override
@@ -31,8 +31,8 @@ public class ScreenGeneratorSolidFuel extends ContainerScreen<ContainerGenerator
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
         this.font.drawString(this.title.getFormattedText(), 8.0F, 6.0F, 4210752);
-        this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0F, (float)(this.ySize - 96 + 2), 4210752);
-        this.font.drawString(""+(this.container).getBurnLeftFraction(), 20.0F, 20.0F, 4210752);
+        this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0F, 72.0F, 4210752);
+        this.font.drawString(""+this.container.getBurnLeftFraction(), 20.0F, 20.0F, 4210752);
     }
 
     @Override
@@ -43,11 +43,9 @@ public class ScreenGeneratorSolidFuel extends ContainerScreen<ContainerGenerator
         int j = this.guiTop;
         this.blit(i, j, 0, 0, this.xSize, this.ySize);
 
-        progressBarUp(1 - (this.container).getBurnLeftFraction(), 80, 16, 176, 0, 14, 14);
+        progressBarUp(1 - this.container.getBurnLeftFraction(), 80, 26, 176, 0, 14, 14);
+        progressBarUp(this.container.getBurnLeftFraction(), 152, 9, 176, 14, 16, 60);
 
-
-        //int k = (int)((this.container).getBurnLeftFraction() * 13);
-        //this.blit(i + 80, j + 16 + k, 176, k, 14, 13 - k);
 
     }
 

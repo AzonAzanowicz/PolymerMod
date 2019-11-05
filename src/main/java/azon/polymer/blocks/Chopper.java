@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockReader;
 
 import javax.annotation.Nullable;
 
-public class Chopper extends _BlockComplex {
+public class Chopper extends _ModBlockComplex {
 
     private static DirectionalShape SHAPE;
 

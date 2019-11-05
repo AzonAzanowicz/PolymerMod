@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class BlockInjectionMachine extends _BlockBase {
+public class BlockInjectionMachine extends _ModBlock {
 
     public BlockInjectionMachine() {
         super("block_injection_machine", Properties.create(Material.IRON)
