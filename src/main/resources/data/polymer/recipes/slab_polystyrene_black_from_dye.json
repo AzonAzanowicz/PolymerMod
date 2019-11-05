@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "polystyrene_color_slabs",
+  "pattern": [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "tag": "forge:slabs/polystyrene"
+    },
+    "d": {
+      "tag": "forge:dyes/black"
+    }
+  },
+  "result": {
+    "item": "polymer:slab_polystyrene_black",
+    "count": 8
+  }
+}

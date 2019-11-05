@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "polymer:block/slab_polystyrene_pink" },
+        "type=top": { "model": "polymer:block/slab_polystyrene_pink_top" },
+        "type=double": { "model": "polymer:block/block_polystyrene_pink" }
+    }
+}

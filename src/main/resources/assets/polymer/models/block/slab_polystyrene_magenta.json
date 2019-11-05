@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "polymer:block/block_polystyrene_magenta",
+        "top": "polymer:block/block_polystyrene_magenta",
+        "side": "polymer:block/block_polystyrene_magenta"
+    }
+}

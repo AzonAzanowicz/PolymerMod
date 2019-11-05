@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "polymer:slab_polystyrene_white",
+        "polymer:slab_polystyrene_orange",
+        "polymer:slab_polystyrene_magenta",
+        "polymer:slab_polystyrene_light_blue",
+        "polymer:slab_polystyrene_yellow",
+        "polymer:slab_polystyrene_lime",
+        "polymer:slab_polystyrene_pink",
+        "polymer:slab_polystyrene_gray",
+        "polymer:slab_polystyrene_light_gray",
+        "polymer:slab_polystyrene_cyan",
+        "polymer:slab_polystyrene_purple",
+        "polymer:slab_polystyrene_blue",
+        "polymer:slab_polystyrene_brown",
+        "polymer:slab_polystyrene_green",
+        "polymer:slab_polystyrene_red",
+        "polymer:slab_polystyrene_black"
+    ]
+}
